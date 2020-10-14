@@ -1,0 +1,7 @@
+.NavStep{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+    border-top: 1px solid gray;
+}

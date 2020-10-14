@@ -1,0 +1,11 @@
+.selectionSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width :600px){
+    .selectionSection{
+        flex-direction: column;
+    }
+}

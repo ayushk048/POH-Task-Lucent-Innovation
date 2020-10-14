@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+
+}
+
+.App main{
+  margin: 0 80px;
+  margin-top: 72px;
+}
+
+.App header{
+  height: 50px;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+
+@media (max-width :600px){
+  .App main{
+    margin-top: 72px;
+    margin: 0;
+  }
+}

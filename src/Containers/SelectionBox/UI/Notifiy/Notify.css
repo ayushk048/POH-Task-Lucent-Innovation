@@ -1,0 +1,12 @@
+.notify-container{
+    background: black;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.5;
+    text-align: center;
+    color: wheat;
+    position: absolute;
+    
+    left: 565px;    
+}

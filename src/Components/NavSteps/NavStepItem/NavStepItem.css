@@ -1,0 +1,29 @@
+.navLink{
+    color: gray;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    user-select: none;
+}
+
+.navLink:active,
+.navLink.active{
+    color: tomato;
+
+}
+
+
+.navLink:hover{
+  text-decoration: none;
+}
+
+.navLink h4{
+  margin-bottom: 0;
+}
+.navLink p{
+   margin-top: 2px;
+   font-size: 12pt;
+   font-weight: 600;
+ 
+}

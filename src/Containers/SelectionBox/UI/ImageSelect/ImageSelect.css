@@ -1,0 +1,20 @@
+.imageSelect{
+    border: 1px solid black;
+}
+
+.imageSelectBlock{
+    height: 50%;
+    margin: 10px;   
+}
+
+
+.imageSelect:hover{
+    cursor: pointer;
+}
+
+@media (max-width : 600px){
+    .imageSelect{
+        width: 300px;
+        height: 300px;
+    }
+}
