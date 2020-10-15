@@ -27,7 +27,7 @@ class Step3 extends Component {
     onCardSelectHandler = (id) => {
         this.setState(state => {
             const card = this.state.cards.find(card => card.id = id);
-            console.log(card);
+
             return {
                 selectedCard: card,
                 totalPrice: state.totalPrice + card.price,
@@ -76,7 +76,7 @@ class Step3 extends Component {
                     stepSummury="step 3 of 4"
                     head="CREATE YOUR PIECE OF HEAVEN"
                     body="Choose the perfact card from our selection of exclusive designs and upload two of your favorite photos" />
-                <p>{this.state.totalPrice}</p>
+
                 {!this.state.selected &&
                     <div className="container" >
                         <div className="row">

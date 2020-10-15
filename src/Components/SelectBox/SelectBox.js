@@ -36,8 +36,7 @@ class SelectBox extends Component {
 
 
     render() {
-        console.log(this.state.selected);
-        console.log('redux', this.props.selectedBox);
+
         return (
             <div className="container" >
                 <SelectionBoxHeader

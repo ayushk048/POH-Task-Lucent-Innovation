@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import SelectionBoxHeader from "../../Containers/SelectionBox/SelectionBoxHeader";
-import images from "../../JSON/gifts";
+
 import ImageCardGift from "../../Containers/SelectionBox/UI/imageCardGift/ImageCardGift";
 import Select from "../../Containers/SelectionBox/UI/Select/Select";
 import CheckoutBar from "../../Containers/SelectionBox/UI/Checkoutbar/CheckoutBar";
@@ -46,12 +46,12 @@ class Step2 extends Component {
     }
 
     selectOptHandler = (e) => {
-        console.log(e.target.value);
+
         const opt = e.target.value;
         switch (opt) {
             case "A-Z":
                 const imagesSortedAZ = this.state.Gifts;
-                imagesSortedAZ.images.sort((a, b) => {
+                imagesSortedAZ.sort((a, b) => {
                     if (a.name > b.name) {
                         return 1;
                     }
@@ -121,7 +121,7 @@ class Step2 extends Component {
 
     onSelectHandler = (id) => {
         const selectedGift = this.state.Gifts.find((image) => image.id === id);
-        console.log(selectedGift);
+
 
         selectedGift.quantity += 1;
 
@@ -140,7 +140,7 @@ class Step2 extends Component {
         const selectedGift = this.state.selectedGifts.find(
             (image) => image.id === id
         );
-        console.log(selectedGift);
+
 
         selectedGift.quantity += 1;
 
@@ -160,7 +160,7 @@ class Step2 extends Component {
             (image) => image.id === id
         );
         const selectedGift = this.state.Gifts.find((image) => image.id === id);
-        console.log(selectedGift);
+
 
         if (selectedGift.quantity === 1) {
             selectedGift.quantity -= 1;
@@ -205,7 +205,7 @@ class Step2 extends Component {
     // }
 
     submitHandler = () => {
-        console.log("sub");
+
         this.props.onsubmit(this.state.totalPrice, this.state.selectedGifts);
         this.props.history.push('/personalize');
     }
@@ -218,7 +218,7 @@ class Step2 extends Component {
                     head="CHOOSE YOUR GIFT"
                     body="Choose a Packaging that speaks to your loved one's style!"
                 />
-                <p >{this.state.totalPrice}</p>
+
                 <Select
                     selected={this.selectOptHandler}
                     selectOpt={this.state.selectOpt}

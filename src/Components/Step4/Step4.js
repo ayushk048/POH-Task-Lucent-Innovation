@@ -26,7 +26,7 @@ class Step4 extends Component {
                         <br></br>
 
                         <h5 style={{ fontWeight: "bold" }}>YOUR MESSAGE:</h5>
-                        <p>Box Color : {this.props.selectedCard?.message}</p>
+                        <p>{this.props.selectedCard?.message}</p>
                         <h5 style={{ fontWeight: "bold" }}>YOUR CARD:</h5>
                         <img
                             style={{ width: "100px" }}

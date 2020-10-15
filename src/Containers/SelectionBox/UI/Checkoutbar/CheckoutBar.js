@@ -1,7 +1,7 @@
 import React from "react";
 
 const CheckoutBar = ({ totalPrice, selectedGifts, checkOut }) => {
-    console.log(selectedGifts);
+
     return (
         <div className="fixed-bottom bg-primary p-4 d-flex justify-content-between">
             <div>
